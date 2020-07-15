@@ -4,7 +4,10 @@
     height: 100%;
     border-radius: 100%;
     position: relative;
-    background: radial-gradient(circle at bottom, #ccf9ff, #dffbff 10%, #b5d1eb 80%, #a5ccf0 100%); }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at bottom, #ccf9ff75, #dffbff 10%, #b5d1eb 80%, #dee8f18a 100%); }
     .bowl:before {
       content: "";
       position: absolute;
@@ -48,4 +51,10 @@
     -ms-perspective-origin: 50% 50%;
     -o-perspective-origin: 50% 50%;
     perspective-origin: 50% 50%;
+  }
+
+  .ball-container{
+    width: 70%;
+    height: 70%;
+    position: relative;
   }

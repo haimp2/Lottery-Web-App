@@ -1,0 +1,41 @@
+@keyframes example {
+    0%   {left:0px; top:92px; transform: rotate(0deg);}
+    25%  {left:102px; top:12px;}
+    50%  {left:55px; top:15px;}
+    75%  {left:123px; top:112px;}
+    100% {left:0px; top:92px; transform: rotate(360deg);}
+}
+
+.ball{
+    background-color: red;
+    border-radius: 50%;
+    height: 17%;
+    width: 17%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 40%);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 2; }
+
+p{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    height: 80%;
+    width: 80%;
+}
