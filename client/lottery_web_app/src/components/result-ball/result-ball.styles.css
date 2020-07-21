@@ -1,18 +1,25 @@
+@keyframes slideIn{
+    0%{left: -800px; transform: rotate(0deg)}
+    100%{left: 0px;transform: rotate(360deg)}
+}
 
-.ball{
+.r-ball{
     background-color: red;
     border-radius: 50%;
-    height: 17%;
-    width: 17%;
-    position: absolute;
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+    animation: slideIn 3s linear;
 
 }
 
-.ball:before {
+.r-ball:before {
     content: "";
     position: absolute;
     top: 1%;

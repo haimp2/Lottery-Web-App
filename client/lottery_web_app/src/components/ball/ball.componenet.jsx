@@ -3,7 +3,7 @@ import './ball.styles.css';
 import { keyframes, css} from "styled-components";
 import styled from 'styled-components';
 
-const Ball = ({color, number, animated})=>{
+const Ball = ({color, number})=>{
 
     let randTop = Math.floor(Math.random() * 190);
     let randLeft = Math.floor(Math.random() * 190);  
@@ -15,7 +15,7 @@ const Ball = ({color, number, animated})=>{
     25%  {left:${Math.floor(Math.random() * 190)}px; top:${Math.floor(Math.random() * 190)}px;}
     50%  {left:${Math.floor(Math.random() * 190)}px; top:${Math.floor(Math.random() * 190)}px;}
     75%  {left:${Math.floor(Math.random() * 190)}px; top:${Math.floor(Math.random() * 190)}px;}
-    100% left:${randLeft}px; top:${randTop}px transform: rotate(360deg);}
+    100% {left:${randLeft}px; top:${randTop}px; transform: rotate(360deg);}
 `;
 
 

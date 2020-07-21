@@ -1,0 +1,30 @@
+.lottery-card{
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.5);
+}
+
+.cells{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+} 
+
+.strong-cells{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}

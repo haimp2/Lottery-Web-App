@@ -1,0 +1,126 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+      "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
+      sans-serif;
+  }
+  body {
+    background-color: #ececec;
+  }
+  .lg-container {
+    max-width: 750px;
+    min-width: 450px;
+    margin: 5rem auto;
+  }
+  .slider {
+    position: absolute;
+    height: 70vh;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: whitesmoke;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+  }
+  .bg {
+    background: url(https://cdn.wallpapersafari.com/6/82/hirn7G.jpg)
+      center content-box;
+    width: 110%;
+    height: 110%;
+    background-size: cover;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    transition: all 0.5s ease-out;
+    background-position: center;
+    filter: blur(2.5px);
+  }
+  .user-box {
+    position: relative;
+  }
+  .form {
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 100px;
+    margin-bottom: 20px;
+    background-color: #ffffff8f;
+    border-radius: 21px;
+  }
+  .form p {
+    font-size: 1.5rem;
+  }
+  .input {
+    width: 100%;
+    padding: 10px 0;
+    padding-top: 20px;
+    font-size: 16px;
+    color:black;
+    text-align: center;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .label {
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+  }
+  .slider .user-box input:focus ~ label,
+  .slider .user-box input:valid ~ label {
+    top: -20px;
+    right: 0;
+    color: #fa0000;
+    font-size: 1.5rem;
+  }
+  .sendButton {
+    display: flex;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    padding: 4px 6px;
+    cursor: pointer;
+    color: #fa0000;
+    margin: 10px auto;
+    width: 150px;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  .sendButton:hover {
+    display: flex;
+    background: #fa0000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fa0000, 0 0 25px #fa0000, 0 0 50px #fa0000;
+    transform: scale(1.2);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  a {
+    color: #48cae4;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  a:hover {
+    font-weight: bold;
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 5px #48cae4);
+  }
+
+  .gone{
+    display: none;
+  }
+  
